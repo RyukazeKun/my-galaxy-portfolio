@@ -81,16 +81,79 @@ const About = ({ id }) => (
 );
 
 const Skills = ({ id }) => (
-  <Section title="Technical Skills" id={id}>
+  <Section title="My Skills" id={id}>
     <div className={styles.skillsGrid}>
-      <div className={styles.skillItem}><SiRos className={styles.skillIcon} style={{ color: '#22314E' }} /> <span className={styles.skillName}>ROS2</span></div>
-      <div className={styles.skillItem}><SiPytorch className={styles.skillIcon} style={{ color: '#EE4C2C' }} /> <span className={styles.skillName}>PyTorch</span></div>
-      <div className={styles.skillItem}><FaPython className={styles.skillIcon} style={{ color: '#3776ab' }} /> <span className={styles.skillName}>Python</span></div>
-      <div className={styles.skillItem}><SiCplusplus className={styles.skillIcon} style={{ color: '#00599c' }} /> <span className={styles.skillName}>C++</span></div>
-      <div className={styles.skillItem}><FaJava className={styles.skillIcon} style={{ color: '#f89820' }} /> <span className={styles.skillName}>Java</span></div>
-      <div className={styles.skillItem}><SiMysql className={styles.skillIcon} style={{ color: '#4479a1' }} /> <span className={styles.skillName}>SQL</span></div>
-      <div className={styles.skillItem}><FaReact className={styles.skillIcon} style={{ color: '#61dafb' }} /> <span className={styles.skillName}>React</span></div>
-      <div className={styles.skillItem}><FaGitAlt className={styles.skillIcon} style={{ color: '#f05032' }} /> <span className={styles.skillName}>Git</span></div>
+      {/* --- New Robotics & AI Skills --- */}
+      <div className={styles.skillItem}>
+        <SiRos className={styles.skillIcon} style={{ color: '#22314E' }} />
+        <span className={styles.skillName}>ROS2</span>
+      </div>
+      <div className={styles.skillItem}>
+        <SiPytorch className={styles.skillIcon} style={{ color: '#EE4C2C' }} />
+        <span className={styles.skillName}>PyTorch</span>
+      </div>
+      <div className={styles.skillItem}>
+        <FaMicrochip className={styles.skillIcon} style={{ color: '#666666' }} />
+        <span className={styles.skillName}>Embedded</span>
+      </div>
+
+      {/* --- Original Skills from your Screenshot --- */}
+      <div className={styles.skillItem}>
+        <FaPython className={styles.skillIcon} style={{ color: '#3776ab' }} />
+        <span className={styles.skillName}>Python</span>
+      </div>
+      <div className={styles.skillItem}>
+        <FaJava className={styles.skillIcon} style={{ color: '#f89820' }} />
+        <span className={styles.skillName}>Java</span>
+      </div>
+      <div className={styles.skillItem}>
+        <SiR className={styles.skillIcon} style={{ color: '#276dc3' }} />
+        <span className={styles.skillName}>R</span>
+      </div>
+      <div className={styles.skillItem}>
+        <FaJs className={styles.skillIcon} style={{ color: '#f7df1e' }} />
+        <span className={styles.skillName}>JavaScript</span>
+      </div>
+      <div className={styles.skillItem}>
+        <FaCode className={styles.skillIcon} style={{ color: '#0076a8' }} />
+        <span className={styles.skillName}>MATLAB</span>
+      </div>
+      <div className={styles.skillItem}>
+        <FaHtml5 className={styles.skillIcon} style={{ color: '#e34f26' }} />
+        <span className={styles.skillName}>HTML</span>
+      </div>
+      <div className={styles.skillItem}>
+        <FaCss3Alt className={styles.skillIcon} style={{ color: '#1572b6' }} />
+        <span className={styles.skillName}>CSS</span>
+      </div>
+      <div className={styles.skillItem}>
+        <SiC className={styles.skillIcon} style={{ color: '#a8b9cc' }} />
+        <span className={styles.skillName}>C</span>
+      </div>
+      <div className={styles.skillItem}>
+        <SiCplusplus className={styles.skillIcon} style={{ color: '#00599c' }} />
+        <span className={styles.skillName}>C++</span>
+      </div>
+      <div className={styles.skillItem}>
+        <FaReact className={styles.skillIcon} style={{ color: '#61dafb' }} />
+        <span className={styles.skillName}>React.js</span>
+      </div>
+      <div className={styles.skillItem}>
+        <SiMysql className={styles.skillIcon} style={{ color: '#4479a1' }} />
+        <span className={styles.skillName}>MySQL</span>
+      </div>
+      <div className={styles.skillItem}>
+        <FaGitAlt className={styles.skillIcon} style={{ color: '#f05032' }} />
+        <span className={styles.skillName}>Git</span>
+      </div>
+      <div className={styles.skillItem}>
+        <SiNextdotjs className={styles.skillIcon} style={{ color: '#000000' }} />
+        <span className={styles.skillName}>Next.js</span>
+      </div>
+      <div className={styles.skillItem}>
+        <SiDjango className={styles.skillIcon} style={{ color: '#092e20' }} />
+        <span className={styles.skillName}>Django</span>
+      </div>
     </div>
   </Section>
 );
