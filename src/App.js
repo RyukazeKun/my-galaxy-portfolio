@@ -162,11 +162,11 @@ const Projects = ({ id }) => (
   <Section title="Projects & Research" id={id}>
     <div className={styles.projectCard}>
       <h3 className={styles.subHeading}><FaRobot /> Micro Mouse Autonomous Robot</h3>
-      <p className={styles.textPrimary}>Implemented flood-fill algorithms in C++ for maze navigation. Developed custom hardware/software using microcontrollers and IR sensors for real-time mapping.</p>
+      <p className={styles.textPrimary}>Implemented flood-fill algorithms using C++ and C to navigate a maze. Designed and developed both hardware and software for an autonomous robot. The robot was programmed using microcontrollers and equipped with sensors for environment detection and mapping.</p>
     </div>
     <div className={styles.projectCard}>
-      <h3 className={styles.subHeading}><FaCode /> Health System API</h3>
-      <p className={styles.textPrimary}>Designed a RESTful API using Java JAX-RS for modern healthcare management, focusing on secure client-server architecture.</p>
+      <h3 className={styles.subHeading}><FaCode /> Machine Learning & Data Mining </h3>
+      <p className={styles.textPrimary}>Created a suitable realistic dataset for data mining/machine learning. Effectively communicated models and output analysis to specialist and non-special audiences. Used the realistic data to assess the scalability and usefulness of learning models.</p>
     </div>
   </Section>
 );
