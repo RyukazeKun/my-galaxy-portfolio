@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaPython, FaJava, FaReact, FaGitAlt, FaCode, FaRobot } from 'react-icons/fa';
-import { SiCplusplus, SiMysql, SiPytorch, SiRos } from 'react-icons/si';
+import { FaGithub, FaLinkedin, FaPython, FaJava, FaJs, FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaCode, FaRobot, FaMicrochip } from 'react-icons/fa';
+import { SiR, SiC, SiCplusplus, SiMysql, SiNextdotjs, SiDjango, SiPytorch, SiRos } from 'react-icons/si';
 import { MdEmail } from 'react-icons/md';
 import styles from './App.module.css'; 
 
