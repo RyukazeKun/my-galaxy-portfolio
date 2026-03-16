@@ -872,3 +872,29 @@ body {
   outline: 2px solid var(--color-accent-blue);
   outline-offset: 2px;
 }
+/* Course Badge Styles */
+.courseGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.courseBadge {
+  background: rgba(187, 134, 252, 0.1);
+  border: 1px solid rgba(187, 134, 252, 0.3);
+  color: var(--color-text-primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.5s ease-out both;
+}
+
+.courseBadge:hover {
+  background: rgba(136, 170, 255, 0.2);
+  border-color: var(--color-accent-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-light);
+}

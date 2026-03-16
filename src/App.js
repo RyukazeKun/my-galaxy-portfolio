@@ -195,12 +195,35 @@ const Education = ({ id }) => (
   <Section title="Education" id={id}>
     <div className={styles.eduItem}>
       <h3 className={styles.subHeading}>King's College London</h3>
-      <p className={styles.textPrimary}><span className={styles.highlightText}>MSc Robotics</span> (2025 - Present)</p>
-      <p className={styles.textSecondary}>Sensing & Perception, Kinematics, Embedded Systems.</p>
+      <p className={styles.textPrimary}>
+        <span className={styles.highlightText}>Master's of Robotics</span>
+      </p>
+      <p className={styles.textSecondary}>Sept 2025 - Present</p>
+      <div className={styles.courseGrid}>
+        {[
+          "Sensing & Perception", "Robot Dynamics & Control", "Kinematics & Motion Planning", 
+          "Embedded System Design", "Intelligence & Autonomy", "Flight Design & Aerodynamics"
+        ].map((course, index) => (
+          <span key={index} className={styles.courseBadge}>{course}</span>
+        ))}
+      </div>
     </div>
-    <div className={styles.eduItem}>
+
+    <div className={styles.eduItem} style={{ marginTop: '2rem' }}>
       <h3 className={styles.subHeading}>University of Westminster</h3>
-      <p className={styles.textPrimary}><span className={styles.highlightText}>BSc Computer Science</span> (2022 - 2025)</p>
+      <p className={styles.textPrimary}>
+        <span className={styles.highlightText}>Bachelor's of Computer Science</span>
+      </p>
+      <p className={styles.textSecondary}>Sept 2022 - May 2025</p>
+      <div className={styles.courseGrid}>
+        {[
+          "OOP in Java", "Machine Learning Data Mining", "Mathematics",
+          "Server-Client Architectures", "Database System", "Robotics Principles",
+          "Applied Robotics", "Game Ai", "Applied Ai"
+        ].map((course, index) => (
+          <span key={index} className={styles.courseBadge}>{course}</span>
+        ))}
+      </div>
     </div>
   </Section>
 );
