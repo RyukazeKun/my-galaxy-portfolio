@@ -57,9 +57,9 @@ const Section = ({ title, children, id }) => (
 );
 
 const Home = ({ id }) => (
-  <Section title="Hello, I'm ROYAL RAI" id={id}>
+  <Section title="Hello, I'm Royal" id={id}>
     <p className={styles.homeText}>
-      A Robotics and Computer Science graduate specializing in autonomous systems, intelligent control, and robust system design. Currently pursuing an MSc in Robotics at King's College London.
+      A Robotics and Computer Science graduate specializing in autonomous systems, intelligent control, and robust system designI specialize in bridging the gap between high-level AI perception and low-level embedded hardware. My work focuses on creating autonomous agents that can navigate and interact with complex environments.
     </p>
     <div className={styles.homeLinks}>
       <a href="https://www.linkedin.com/in/royalrai/" target="_blank" rel="noopener noreferrer" className={styles.socialLinkLinkedin}>
@@ -72,11 +72,85 @@ const Home = ({ id }) => (
   </Section>
 );
 
-const About = ({ id }) => (
-  <Section title="About Me" id={id}>
-    <p className={styles.textPrimary}>
-      I specialize in bridging the gap between high-level AI perception and low-level embedded hardware. My work focuses on creating autonomous agents that can navigate and interact with complex environments.
-    </p>
+const Experience = ({ id }) => (
+  <Section title="Work Experience" id={id}>
+    <div className={styles.experienceItem}>
+      <h3 className={styles.subHeading}>TridHome</h3>
+      <p className={styles.textPrimary}><span className={styles.highlightText}>Frontend Developer</span> (Apr 2025 - Present)</p>
+      <ul className={styles.responsibilityList}>
+        <li>Developed ML systems predicting property sales with 25% improved accuracy.</li>
+        <li>Integrated Google Maps API for interactive market insights.</li>
+      </ul>
+    </div>
+    <div className={styles.experienceItem}>
+      <h3 className={styles.subHeading}>Sidequest</h3>
+      <p className={styles.textPrimary}><span className={styles.highlightText}>Team Member</span> (Sept 2022 - May 2024)</p>
+      <ul className={styles.responsibilityList}>
+        <li>Repaired hardware systems and optimized team efficiency.</li>
+      </ul>
+    </div>
+  </Section>
+);
+
+const Projects = ({ id }) => (
+  <Section title="Projects & Research" id={id}>
+    <div className={styles.projectCard}>
+      <h3 className={styles.subHeading}><FaCode /> Intelligence & Autonomy</h3>
+      <p className={styles.textPrimary}>Developed a Python-based predictive motor control pipeline using scikit-learn (MLPRegressor) to map spatial coordinates to joint angles, and implemented Root Mean Squared Error (RMSE) metrics using forward kinematics to evaluate targeting accuracy.</p>
+    </div>
+    <div className={styles.projectCard}>
+      <h3 className={styles.subHeading}><FaCode /> Robot Dynamic & Control</h3>
+      <p className={styles.textPrimary}>Developed nonlinear model-based controllers (including joint- and Cartesian-space schemes) for a 2-DoF underactuated, articulated-soft robotic manipulator using Python and Drake.</p>
+    </div>
+    <div className={styles.projectCard}>
+      <h3 className={styles.subHeading}><FaCode /> Sensing and Perception</h3>
+      <p className={styles.textPrimary}>Developed a computer vision perception algorithm to recognise human actions from video for industrial human-robot collaboration. Evaluated models on annotated datasets, optimised generalisation to unseen test data, and ensured reproducible workflows.</p>
+    </div>
+    <div className={styles.projectCard}>
+      <h3 className={styles.subHeading}><FaRobot /> Micro Mouse Autonomous Robot</h3>
+      <p className={styles.textPrimary}>Implemented flood-fill algorithms using C++ and C to navigate a maze. Designed and developed both hardware and software for an autonomous robot. The robot was programmed using microcontrollers and equipped with sensors for environment detection and mapping.</p>
+    </div>
+    <div className={styles.projectCard}>
+      <h3 className={styles.subHeading}><FaCode /> Machine Learning & Data Mining </h3>
+      <p className={styles.textPrimary}>Created a suitable realistic dataset for data mining/machine learning. Effectively communicated models and output analysis to specialist and non-special audiences. Used the realistic data to assess the scalability and usefulness of learning models.</p>
+    </div>
+  </Section>
+);
+
+const Education = ({ id }) => (
+  <Section title="Education" id={id}>
+    <div className={styles.eduItem}>
+      <h3 className={styles.subHeading}>King's College London</h3>
+      <p className={styles.textPrimary}>
+        <span className={styles.highlightText}>Master's of Robotics</span>
+      </p>
+      <p className={styles.textSecondary}>Sept 2025 - Present</p>
+      <div className={styles.courseGrid}>
+        {[
+          "Sensing & Perception", "Robot Dynamics & Control", "Kinematics & Motion Planning", 
+          "Embedded System Design", "Intelligence & Autonomy", "Flight Design & Aerodynamics"
+        ].map((course, index) => (
+          <span key={index} className={styles.courseBadge}>{course}</span>
+        ))}
+      </div>
+    </div>
+
+    <div className={styles.eduItem} style={{ marginTop: '2rem' }}>
+      <h3 className={styles.subHeading}>University of Westminster</h3>
+      <p className={styles.textPrimary}>
+        <span className={styles.highlightText}>Bachelor's of Computer Science</span>
+      </p>
+      <p className={styles.textSecondary}>Sept 2022 - May 2025</p>
+      <div className={styles.courseGrid}>
+        {[
+          "OOP in Java", "Machine Learning Data Mining", "Mathematics",
+          "Server-Client Architectures", "Database System", "Robotics Principles",
+          "Applied Robotics", "Game Ai", "Applied Ai"
+        ].map((course, index) => (
+          <span key={index} className={styles.courseBadge}>{course}</span>
+        ))}
+      </div>
+    </div>
   </Section>
 );
 
@@ -153,76 +227,6 @@ const Skills = ({ id }) => (
       <div className={styles.skillItem}>
         <SiDjango className={styles.skillIcon} style={{ color: '#092e20' }} />
         <span className={styles.skillName}>Django</span>
-      </div>
-    </div>
-  </Section>
-);
-
-const Projects = ({ id }) => (
-  <Section title="Projects & Research" id={id}>
-    <div className={styles.projectCard}>
-      <h3 className={styles.subHeading}><FaRobot /> Micro Mouse Autonomous Robot</h3>
-      <p className={styles.textPrimary}>Implemented flood-fill algorithms using C++ and C to navigate a maze. Designed and developed both hardware and software for an autonomous robot. The robot was programmed using microcontrollers and equipped with sensors for environment detection and mapping.</p>
-    </div>
-    <div className={styles.projectCard}>
-      <h3 className={styles.subHeading}><FaCode /> Machine Learning & Data Mining </h3>
-      <p className={styles.textPrimary}>Created a suitable realistic dataset for data mining/machine learning. Effectively communicated models and output analysis to specialist and non-special audiences. Used the realistic data to assess the scalability and usefulness of learning models.</p>
-    </div>
-  </Section>
-);
-
-const Experience = ({ id }) => (
-  <Section title="Work Experience" id={id}>
-    <div className={styles.experienceItem}>
-      <h3 className={styles.subHeading}>TridHome</h3>
-      <p className={styles.textPrimary}><span className={styles.highlightText}>Frontend Developer</span> (Apr 2025 - Present)</p>
-      <ul className={styles.responsibilityList}>
-        <li>Developed ML systems predicting property sales with 25% improved accuracy.</li>
-        <li>Integrated Google Maps API for interactive market insights.</li>
-      </ul>
-    </div>
-    <div className={styles.experienceItem}>
-      <h3 className={styles.subHeading}>Sidequest</h3>
-      <p className={styles.textPrimary}><span className={styles.highlightText}>Team Member</span> (Sept 2022 - May 2024)</p>
-      <ul className={styles.responsibilityList}>
-        <li>Repaired hardware systems and optimized team efficiency.</li>
-      </ul>
-    </div>
-  </Section>
-);
-
-const Education = ({ id }) => (
-  <Section title="Education" id={id}>
-    <div className={styles.eduItem}>
-      <h3 className={styles.subHeading}>King's College London</h3>
-      <p className={styles.textPrimary}>
-        <span className={styles.highlightText}>Master's of Robotics</span>
-      </p>
-      <p className={styles.textSecondary}>Sept 2025 - Present</p>
-      <div className={styles.courseGrid}>
-        {[
-          "Sensing & Perception", "Robot Dynamics & Control", "Kinematics & Motion Planning", 
-          "Embedded System Design", "Intelligence & Autonomy", "Flight Design & Aerodynamics"
-        ].map((course, index) => (
-          <span key={index} className={styles.courseBadge}>{course}</span>
-        ))}
-      </div>
-    </div>
-
-    <div className={styles.eduItem} style={{ marginTop: '2rem' }}>
-      <h3 className={styles.subHeading}>University of Westminster</h3>
-      <p className={styles.textPrimary}>
-        <span className={styles.highlightText}>Bachelor's of Computer Science</span>
-      </p>
-      <p className={styles.textSecondary}>Sept 2022 - May 2025</p>
-      <div className={styles.courseGrid}>
-        {[
-          "OOP in Java", "Machine Learning Data Mining", "Mathematics",
-          "Server-Client Architectures", "Database System", "Robotics Principles",
-          "Applied Robotics", "Game Ai", "Applied Ai"
-        ].map((course, index) => (
-          <span key={index} className={styles.courseBadge}>{course}</span>
-        ))}
       </div>
     </div>
   </Section>
