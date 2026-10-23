@@ -105,7 +105,7 @@ const Projects = ({ id }) => (
       <p className={styles.textPrimary}>Developed a Python-based predictive motor control pipeline using scikit-learn (MLPRegressor) to map spatial coordinates to joint angles, and implemented Root Mean Squared Error (RMSE) metrics using forward kinematics to evaluate targeting accuracy.</p>
     </div>
     <div className={styles.projectCard}>
-      <h3 className={styles.subHeading}><FaCode /> Robot Dynamic & Control</h3>
+      <h3 className={styles.subHeading}><FaRobot /> Robot Dynamic & Control</h3>
       <p className={styles.textPrimary}>Developed nonlinear model-based controllers (including joint- and Cartesian-space schemes) for a 2-DoF underactuated, articulated-soft robotic manipulator using Python and Drake.</p>
     </div>
     <div className={styles.projectCard}>
