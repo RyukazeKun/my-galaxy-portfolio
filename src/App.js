@@ -33,10 +33,10 @@ const App = () => {
       {/* Main Content Area */}
       <main className={styles.mainContent}>
         <Home id="home" />
-        <Skills id="skills" />
-        <Projects id="projects" />
         <Experience id="experience" />
+        <Projects id="projects" />
         <Education id="education" />
+        <Skills id="skills" />
         <Contact id="contact" />
       </main>
 
