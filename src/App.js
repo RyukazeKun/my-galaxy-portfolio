@@ -42,7 +42,7 @@ const App = () => {
 
       <footer className={styles.footer}>
         <p>&copy; {new Date().getFullYear()} Royal Rai. All rights reserved.</p>
-        <p style={{ fontSize: '0.8rem', opacity: 0.6 }}>Designed for Robotics & AI</p>
+        <p style={{ fontSize: '0.8rem', opacity: 0.6 }}>Designed for Software Engineer & Robotics</p>
       </footer>
     </div>
   );
