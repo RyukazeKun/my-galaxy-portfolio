@@ -60,7 +60,7 @@ const Home = ({ id }) => (
     <p className={styles.homeText}>
       Software Engineer specialising in Robotics, Machine Learning, and AI. I apply a versatile skill set, including 
       C++, C, Python, R, and MATLAB to build and analyse intelligent systems. With a foundation in full-stack
-      development, invested in engineering robust software solutions for complex challenges in the AI domain
+      development, invested in engineering robust software solutions for complex challenges in the AI domain.
     </p>
     <div className={styles.homeLinks}>
       <a href="https://www.linkedin.com/in/royalrai/" target="_blank" rel="noopener noreferrer" className={styles.socialLinkLinkedin}>
@@ -97,6 +97,10 @@ const Experience = ({ id }) => (
 const Projects = ({ id }) => (
   <Section title="Projects & Research" id={id}>
     <div className={styles.projectCard}>
+      <h3 className={styles.subHeading}><FaCode /> ML Micro-CT Skull Segmentation</h3>
+      <p className={styles.textPrimary}>Developed a Python-based machine learning pipeline using a U-Net architecture with a ResNet-34 encoder to automate 3D micro-CT skull segmentation across 15 primate species, accelerating volume processing and achieving over 95% Dice accuracy.</p>
+    </div>
+    <div className={styles.projectCard}>
       <h3 className={styles.subHeading}><FaCode /> Intelligence & Autonomy</h3>
       <p className={styles.textPrimary}>Developed a Python-based predictive motor control pipeline using scikit-learn (MLPRegressor) to map spatial coordinates to joint angles, and implemented Root Mean Squared Error (RMSE) metrics using forward kinematics to evaluate targeting accuracy.</p>
     </div>
@@ -126,7 +130,7 @@ const Education = ({ id }) => (
       <p className={styles.textPrimary}>
         <span className={styles.highlightText}>Master's of Robotics</span>
       </p>
-      <p className={styles.textSecondary}>Sept 2025 - Present</p>
+      <p className={styles.textSecondary}>Sept 2025 - Aug 2026</p>
       <div className={styles.courseGrid}>
         {[
           "Sensing & Perception", "Robot Dynamics & Control", "Kinematics & Motion Planning", 
