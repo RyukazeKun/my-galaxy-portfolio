@@ -55,8 +55,8 @@ const Section = ({ title, children, id }) => (
   </section>
 );
 
-const Home = ({ id }) => (
-  <Section title="Hello, I'm Royal" id={id}>
+const About = ({ id }) => (
+  <Section title="About Me" id={id}>
     <p className={styles.homeText}>
       Software Engineer specialising in Robotics, Machine Learning, and AI. I apply a versatile skill set, including 
       C++, C, Python, R, and MATLAB to build and analyse intelligent systems. With a foundation in full-stack
