@@ -58,7 +58,9 @@ const Section = ({ title, children, id }) => (
 const Home = ({ id }) => (
   <Section title="Hello, I'm Royal" id={id}>
     <p className={styles.homeText}>
-      A Robotics and Computer Science graduate specializing in autonomous systems, intelligent control, and robust system designI specialize in bridging the gap between high-level AI perception and low-level embedded hardware. My work focuses on creating autonomous agents that can navigate and interact with complex environments.
+      Software Engineer specialising in Robotics, Machine Learning, and AI. I apply a versatile skill set, including 
+      C++, C, Python, R, and MATLAB to build and analyse intelligent systems. With a foundation in full-stack
+      development, invested in engineering robust software solutions for complex challenges in the AI domain
     </p>
     <div className={styles.homeLinks}>
       <a href="https://www.linkedin.com/in/royalrai/" target="_blank" rel="noopener noreferrer" className={styles.socialLinkLinkedin}>
@@ -75,17 +77,18 @@ const Experience = ({ id }) => (
   <Section title="Work Experience" id={id}>
     <div className={styles.experienceItem}>
       <h3 className={styles.subHeading}>TridHome</h3>
-      <p className={styles.textPrimary}><span className={styles.highlightText}>Frontend Developer</span> (Apr 2025 - Present)</p>
+      <p className={styles.textPrimary}><span className={styles.highlightText}>Frontend Developer</span> (Apr 2025 - May 2026)</p>
       <ul className={styles.responsibilityList}>
-        <li>Developed ML systems predicting property sales with 25% improved accuracy.</li>
-        <li>Integrated Google Maps API for interactive market insights.</li>
+        <li>Integrated front-end interfaces with database systems to create data flow and user experiences, optimising website load time by 30% and reducing bounce rate through enhanced performance.</li>
+        <li>AI-Powered Property Analytics: Developed ML system predicting property sales with 25% improved accuracy, integrated with Google Maps API for interactive location-based market insights.</li>
       </ul>
     </div>
     <div className={styles.experienceItem}>
       <h3 className={styles.subHeading}>Sidequest</h3>
       <p className={styles.textPrimary}><span className={styles.highlightText}>Team Member</span> (Sept 2022 - May 2024)</p>
       <ul className={styles.responsibilityList}>
-        <li>Repaired hardware systems and optimized team efficiency.</li>
+        <li>Ran night shifts in a gaming cafe with just two staff, including me, helped customers set up accounts, top-up credits, and sorted out any computer problems.</li>
+        <li>Responsible for taking care of one of the branches, handling everything from stock management to serving customers and working the till. All PCs and equipment were manually checked and well-maintained.</li>
       </ul>
     </div>
   </Section>
